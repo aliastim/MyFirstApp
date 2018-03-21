@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap: data:; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title>Hello World</title>
+</head>
+
+<body>
+<nav class="navbar navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">
+        <!--<img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">-->
+    </a>
+        <div class="d-flex justify-content-center">
+            AirDream
+        </div>
+
+        <div class="p-2">
+        </div>
+
+</nav>
+
+<div class="col-12">
+    <br><br>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/4.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <!--<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>-->
+            </div>
+
+            <!--<img src="img/1.jpg" class="rounded mx-auto d-block" alt="..." style="width: 100%;">-->
+            <div style="margin-top: 10px;"></div>
+
+            <div class="row">
+                <div class="col"><img src="img/voyagez.jpg" class="rounded mx-auto d-block" alt="..." style="width: 100%;"><h1 class="villes">VOYAGEZ</h1></div>
+                <div class="col"><img src="img/prix.jpg" class="rounded mx-auto d-block" alt="..." style="width: 100%;"><h1 class="villes">COMPAREZ</h1></div>
+                <div class="w-100" style="margin-top: 10px;"></div>
+                <div class="col"><img src="img/guide.jpg" class="rounded mx-auto d-block" alt="..." style="width: 100%;"><h1 class="villes">NOS GUIDES</h1></div>
+                <div class="col"><img src="img/partenaires.jpg" class="rounded mx-auto d-block" alt="..." style="width: 100%;"><h1 class="villes">NOS PARTENAIRES</h1></div>
+            </div>
+
+            <!--<div class="card">
+                <div class="card-body">
+                    Découvrez nos forfaits vacances
+                </div>
+            </div>-->
+
+            <a href="forfaits.html"><button type="button" class="btn btn-primary btn-lg btn-block">Découvrez nos forfaits vacances</button></a>
+
+            <br><br><br><br><br><br><br>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <section class="sectioncp sectioncp1"></section>
+            <section class="sectioncp sectioncp1_2">
+                <a href="voyage.html" style="text-decoration: none; color: black;">
+                <div class="d-flex flex-row-reverse">
+                    <div class="p-2"><p class="sectioncp1_txt">TOKYO</p></div>
+                </div>
+                </a>
+            </section>
+
+            <section class="sectioncp sectioncp2" style="margin-top: 10px;"></section>
+            <section class="sectioncp sectioncp1_2">
+                <a href="voyage.html" style="text-decoration: none; color: black;">
+                    <div class="d-flex flex-row-reverse">
+                        <div class="p-2"><p class="sectioncp1_txt">NEW-YORK</p></div>
+                    </div>
+                </a>
+            </section>
+
+            <section class="sectioncp sectioncp3" style="margin-top: 10px;"></section>
+            <section class="sectioncp sectioncp1_2">
+                <a href="voyage.html" style="text-decoration: none; color: black;">
+                    <div class="d-flex flex-row-reverse">
+                        <div class="p-2"><p class="sectioncp1_txt">SYDNEY</p></div>
+                    </div>
+                </a>
+            </section>
+
+            <section class="sectioncp sectioncp4" style="margin-top: 10px;"></section>
+            <section class="sectioncp sectioncp1_2">
+                <a href="voyage.html" style="text-decoration: none; color: black;">
+                    <div class="d-flex flex-row-reverse">
+                        <div class="p-2"><p class="sectioncp1_txt">LE CAIRE</p></div>
+                    </div>
+                </a>
+            </section>
+
+            <section class="sectioncp sectioncp11" style="margin-top: 10px;"></section>
+            <section class="sectioncp sectioncp1_2">
+                <a href="voyage.html" style="text-decoration: none; color: black;">
+                    <div class="d-flex flex-row-reverse">
+                        <div class="p-2"><p class="sectioncp1_txt">Reykjavik</p></div>
+                    </div>
+                </a>
+            </section>
+
+            <section class="sectioncp sectioncp12" style="margin-top: 10px;"></section>
+            <section class="sectioncp sectioncp1_2">
+                <a href="voyage.html" style="text-decoration: none; color: black;">
+                    <div class="d-flex flex-row-reverse">
+                        <div class="p-2"><p class="sectioncp1_txt">Nairobi</p></div>
+                    </div>
+                </a>
+            </section>
+
+            <br><br><br>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <section class="sectioncp sectioncp5"></section>
+            <section class="sectioncp sectioncp1_2">
+                <a href="voyage.html" style="text-decoration: none; color: black;">
+                    <div class="d-flex flex-row-reverse">
+                        <div class="p-2"><p class="sectioncp1_txt">Air France</p></div>
+                    </div>
+                </a>
+            </section>
+
+            <section class="sectioncp sectioncp6" style="margin-top: 10px;"></section>
+            <section class="sectioncp sectioncp1_2">
+                <a href="voyage.html" style="text-decoration: none; color: black;">
+                    <div class="d-flex flex-row-reverse">
+                        <div class="p-2"><p class="sectioncp1_txt">Ryanair</p></div>
+                    </div>
+                </a>
+            </section>
+
+            <section class="sectioncp sectioncp7" style="margin-top: 10px;"></section>
+            <section class="sectioncp sectioncp1_2">
+                <a href="voyage.html" style="text-decoration: none; color: black;">
+                    <div class="d-flex flex-row-reverse">
+                        <div class="p-2"><p class="sectioncp1_txt">Norwegian</p></div>
+                    </div>
+                </a>
+            </section>
+
+            <section class="sectioncp sectioncp8" style="margin-top: 10px;"></section>
+            <section class="sectioncp sectioncp1_2">
+                <a href="voyage.html" style="text-decoration: none; color: black;">
+                    <div class="d-flex flex-row-reverse">
+                        <div class="p-2"><p class="sectioncp1_txt">Qatar</p></div>
+                    </div>
+                </a>
+            </section>
+
+            <section class="sectioncp sectioncp9" style="margin-top: 10px;"></section>
+            <section class="sectioncp sectioncp1_2">
+                <a href="voyage.html" style="text-decoration: none; color: black;">
+                    <div class="d-flex flex-row-reverse">
+                        <div class="p-2"><p class="sectioncp1_txt">Emirates</p></div>
+                    </div>
+                </a>
+            </section>
+
+            <section class="sectioncp sectioncp10" style="margin-top: 10px;"></section>
+            <section class="sectioncp sectioncp1_2">
+                <a href="voyage.html" style="text-decoration: none; color: black;">
+                    <div class="d-flex flex-row-reverse">
+                        <div class="p-2"><p class="sectioncp1_txt">Air Canada</p></div>
+                    </div>
+                </a>
+            </section>
+
+            <br><br><br>
+        </div>
+    </div>
+
+
+</div>
+<footer>
+    <div class="col-12 fixed-bottom " style="background: rgba(42, 42, 42, 0.7);">
+        <div class="row">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="margin-bottom: 0 !important;">
+                <li class="nav-item col-4" style="padding-left: 0; padding-right: 0;">
+                    <a class="nav-link active" style="padding-right: 15px; padding-left: 15px;" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><img src="img/home.png" class="rounded mx-auto d-block" alt="..." style="width: 50%;"></a>
+                </li>
+                <li class="nav-item col-4" style="padding-left: 0; padding-right: 0;">
+                    <a class="nav-link" style="padding-right: 15px; padding-left: 15px;" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="img/goal.png" class="rounded mx-auto d-block" alt="..." style="width: 50%;"></a> <!-- Nos Compagnies -->
+                </li>
+                <li class="nav-item col-4" style="padding-left: 0; padding-right: 0;">
+                    <a class="nav-link" style="padding-right: 15px; padding-left: 15px;" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"><img src="img/paper-plane.png" class="rounded mx-auto d-block" alt="..." style="width: 50%;"></a> <!-- Nos voyages -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!--<footer>
+    <div class="col-12 fixed-bottom " style="background: grey;">
+        <div class="row">
+            <div class="col-4"><img src="img/1.jpg" class="rounded mx-auto d-block" alt="..." style="width: 100%;"><h1 class="villes">TOKYO</h1></div>
+            <div class="col-4"><img src="img/2.jpg" class="rounded mx-auto d-block" alt="..." style="width: 100%;"><h1 class="villes">NEW YORK</h1></div>
+            <div class="col-4"><img src="img/3.jpg" class="rounded mx-auto d-block" alt="..." style="width: 100%;"><h1 class="villes">SYDNEY</h1></div>
+        </div>
+    </div>
+</footer>-->
+    <!--<div class="app">
+
+        <h1>Ma première application sur phonegap en hybride parce que je pèse dans le milieu</h1>
+        <div id="deviceready" class="blink">
+            <p class="event listening">Connecting to Device</p>
+            <p class="event received">Device is Ready</p>
+        </div>
+        <img id="img" style="position:fixed;width:100%;height:100%;left:0px;top:0px;">
+    </div>-->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+
+    <script type="text/javascript">
+        app.initialize();
+
+        $('.carousel').carousel({
+            interval: 2000
+        })
+
+        /*document.addEventListener("deviceready", onDeviceReady, false); function onDeviceReady() {
+
+            console.log(navigator);
+
+            navigator.camera.getPicture (function(base64){
+            let src = "data:image/jpeg;base64,"+base64;
+
+            $('#img').attr('src',src);
+        }, function(){}, {}) }*/
+    </script>
+
+
+</body>
+
+</html>
